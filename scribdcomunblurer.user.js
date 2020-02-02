@@ -15,6 +15,7 @@
 // @downloadURL    https://github.com/ayltai/Hack-Scribd-Unblurer/blob/master/scribdcomunblurer.user.js
 // ==/UserScript==
 setInterval(function() {
+    $('.promo').remove();
     $('.page-blur-promo-overlay').remove();
     $('.page_missing_explanation_inner').remove();
     $('.autogen_class_views_read2_page_blur_promo').remove();
