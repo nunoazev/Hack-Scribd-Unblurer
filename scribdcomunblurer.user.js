@@ -15,13 +15,21 @@
 // @downloadURL    https://github.com/ayltai/Hack-Scribd-Unblurer/blob/master/scribdcomunblurer.user.js
 // ==/UserScript==
 setInterval(function() {
+    $('.newpage').removeAttr('id');
+    $('.newpage').removeAttr('class');
+    $('.outer_page').css("height", "100%");
+    $('.page_missing_explanation').remove();
+    $('.between_page_portal_root').remove();
+    $('.auto__doc_page_webpack_app_page_truncate_promo').remove();
+    $('.between_page_portal_root .single_page').remove();
+    $('.auto__doc_page_webpack_doc_page_body_static_promo_study').remove();
     $('.promo').remove();
     $('.page-blur-promo-overlay').remove();
     $('.page_missing_explanation_inner').remove();
     $('.autogen_class_views_read2_page_blur_promo').remove();
     $('.outer_page only_ie6_border blurred_page').remove();
     $('.page-blur-promo').removeClass('page-blur-promo');
-     $('.page_blur_promo').remove();
+    $('.page_blur_promo').remove();
     $('.absimg').css('opacity', '1.0');
     $('.text_layer').css('color', '#000');
     $('.text_layer').css('text-shadow', '0px 0px 0px #000');
